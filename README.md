@@ -102,12 +102,9 @@ npm install
 > [!IMPORTANT]
 > **For first-time setup, configure triggers first:**
 > - **OpenClaw**:
->   1. Read and load `chromemanager-skill-openclaw/SKILL.md`
->   2. Bind `/cm` and `/chromemanager` to `chromemanager-skill-openclaw` as trigger commands
+>   1. Read and load `chromemanager-skill-openclaw/SKILL.md`, then bind `/cm` and `/chromemanager` to `chromemanager-skill-openclaw` as triggers
 > - **Hermes**:
->   1. Read and load `chromemanager-skill-hermes/SKILL.md`
->   2. Save `cm`, `ChromeManager`, and `chromemanager` as memory triggers
->   3. Route those triggers to `chromemanager-skill-hermes` with priority
+>   1. Read and load `chromemanager-skill-hermes/SKILL.md`, then save `cm`, `ChromeManager`, and `chromemanager` as memory triggers, and route them to `chromemanager-skill-hermes` with priority
 
 Single-line task example:
 
