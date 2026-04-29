@@ -65,12 +65,12 @@ For both OpenClaw and Hermes editions:
 npm install
 ```
 4. Edit `config.json` and set:
-   - `api_token`
-   - `api_host`
-   - `api_port`
-   - `software_path`
-   - `autoStart`
-5. Enable local API in ChromeManager and make sure the token matches
+   - `api_token`: API token generated in ChromeManager
+   - `api_host`: API host address (usually `127.0.0.1`)
+   - `api_port`: API port (default `18923`)
+   - `software_path`: local install path of ChromeManager executable
+   - `autoStart`: whether to auto-launch ChromeManager when not running (`true`/`false`)
+5. Enable local API in ChromeManager and make sure the token matches `api_token`
 
 ## OpenClaw and Hermes
 

@@ -1,8 +1,8 @@
 {
-  "api_token": "e639316d3837ffbd56a597f1f2e73b1cf1c91bef2a197c95",
+  "api_token": "YOUR_CHROMEMANAGER_API_TOKEN",
   "api_port": 18923,
   "api_host": "127.0.0.1",
-  "software_path": "D:\\code\\Program\\ChromeDuo V4.0\\bin\\ChromeManager.exe",
+  "software_path": "YOUR_LOCAL_CHROMEMANAGER_INSTALL_PATH",
   "autoStart": true,
   "startup_wait_ms": 30000,
   "default_timeout_ms": 30000,
