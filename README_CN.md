@@ -102,12 +102,9 @@ npm install
 > [!IMPORTANT]
 > **首次接入前，请先完成触发词设置：**
 > - **OpenClaw**：
->   1. 先读取并加载 `chromemanager-skill-openclaw/SKILL.md`
->   2. 再将 `/cm` 和 `/chromemanager` 绑定到 `chromemanager-skill-openclaw` 作为触发词
+>   1. 先读取并加载 `chromemanager-skill-openclaw/SKILL.md`，再将 `/cm` 和 `/chromemanager` 绑定到 `chromemanager-skill-openclaw` 作为触发词
 > - **Hermes**：
->   1. 先读取并加载 `chromemanager-skill-hermes/SKILL.md`
->   2. 再把 `cm`、`ChromeManager`、`chromemanager` 写入记忆并作为触发词
->   3. 并优先路由到 `chromemanager-skill-hermes`
+>   1. 先读取并加载 `chromemanager-skill-hermes/SKILL.md`，再把 `cm`、`ChromeManager`、`chromemanager` 写入记忆并作为触发词，并优先路由到 `chromemanager-skill-hermes`。
 
 示例命令：
 
