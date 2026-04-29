@@ -34,6 +34,10 @@ function escapeForPowershellSingleQuoted(value) {
   return String(value || '').replace(/'/g, "''");
 }
 
+function isMacAppBundlePath(value) {
+  return String(value || '').trim().toLowerCase().endsWith('.app');
+}
+
 async function requestJson(url, options = {}) {
   const response = await fetch(url, options);
   const text = await response.text();
@@ -91,8 +95,18 @@ export class ChromeManagerClient {
       throw new Error('config.software_path is empty');
     }
 
+    const softwarePath = String(this.config.software_path).trim();
+
+    if (process.platform === 'darwin' && isMacAppBundlePath(softwarePath)) {
+      spawn('open', [softwarePath], {
+        detached: true,
+        stdio: 'ignore'
+      }).unref();
+      return;
+    }
+
     if (process.platform === 'linux') {
-      const windowsPath = toWindowsPath(this.config.software_path);
+      const windowsPath = toWindowsPath(softwarePath);
       if (looksLikeWindowsPath(windowsPath)) {
         const psCommand = `Start-Process -FilePath '${escapeForPowershellSingleQuoted(windowsPath)}'`;
         spawn('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command', psCommand], {
@@ -103,7 +117,7 @@ export class ChromeManagerClient {
       }
     }
 
-    spawn(this.config.software_path, [], {
+    spawn(softwarePath, [], {
       detached: true,
       stdio: 'ignore',
       windowsHide: true

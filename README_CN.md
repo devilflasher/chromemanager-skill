@@ -68,7 +68,7 @@ npm install
    - `api_token`：你在 ChromeManager 里生成的 API Token
    - `api_host`：API 主机地址（通常为 `127.0.0.1`）
    - `api_port`：API 端口（默认 `18923`）
-   - `software_path`：本地 ChromeManager 可执行文件安装路径（推荐格式：`D:/code/Program/ChromeDuo V4.0/bin/ChromeManager.exe`）
+   - `software_path`：本地 ChromeManager 可执行文件安装路径（Windows 示例：`D:/***/***/ChromeManager.exe`；macOS 示例：`/Applications/***/ChromeManager.app`）
    - `autoStart`：当 ChromeManager 未运行时是否自动拉起（`true`/`false`）
 5. 在 ChromeManager 中启用本地 API，并确认其 Token 与 `api_token` 一致
 

@@ -68,7 +68,7 @@ npm install
    - `api_token`: API token generated in ChromeManager
    - `api_host`: API host address (usually `127.0.0.1`)
    - `api_port`: API port (default `18923`)
-   - `software_path`: local install path of ChromeManager executable (recommended format: `D:/code/Program/ChromeDuo V4.0/bin/ChromeManager.exe`)
+   - `software_path`: local install path of ChromeManager executable (Windows example: `D:/***/***/ChromeManager.exe`; macOS example: `/Applications/***/ChromeManager.app`)
    - `autoStart`: whether to auto-launch ChromeManager when not running (`true`/`false`)
 5. Enable local API in ChromeManager and make sure the token matches `api_token`
 
