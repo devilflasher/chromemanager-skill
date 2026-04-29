@@ -156,10 +156,4 @@ npm install
 - 发生校验失败、恢复失败、钱包确认阻塞时，优先截图并回传
 - 回传内容尽量包含：当前阶段、受影响窗口、结果状态、下一步问题
 
-## 相关文件
-
-OpenClaw：
-- [chromemanager-skill-openclaw/SKILL.md](./chromemanager-skill-openclaw/SKILL.md)
-
-Hermes：
-- [chromemanager-skill-hermes/SKILL.md](./chromemanager-skill-hermes/SKILL.md)
+**欢迎加入NoBiggie的XChat群组讨论交流：** [![XChat群组](https://img.shields.io/badge/XChat群组-000000.svg?style=flat&logo=x&logoColor=white)](https://x.com/i/chat/group_join/g2043878131141095639/HSWv2DsC7g)

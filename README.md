@@ -156,10 +156,4 @@ Recommended practice:
 - when validation/recovery fails or wallet confirmation is blocked, screenshot first and report
 - include: current stage, affected windows, result status, and next-step question
 
-## Related Files
-
-OpenClaw:
-- [chromemanager-skill-openclaw/SKILL.md](./chromemanager-skill-openclaw/SKILL.md)
-
-Hermes:
-- [chromemanager-skill-hermes/SKILL.md](./chromemanager-skill-hermes/SKILL.md)
+**Join the NoBiggie XChat group for discussion:** [![XChat Group](https://img.shields.io/badge/XChat%20Group-000000.svg?style=flat&logo=x&logoColor=white)](https://x.com/i/chat/group_join/g2043878131141095639/HSWv2DsC7g)
