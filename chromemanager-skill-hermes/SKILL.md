@@ -85,6 +85,65 @@ Interpretation guide:
 - `全部并行执行` -> `concurrency: "all"`
 - `串行执行` -> `concurrency: 1`
 
+## Help Response
+
+When the user asks for help with phrases such as `cm help`, `cm 帮助`, `ChromeManager help`, `ChromeManager 帮助`, `chromemanager help`, `chromemanager 帮助`, `/cm help`, or `/cm 帮助`, reply with the fixed concise help message below.
+
+Rules:
+- Do not call ChromeManager API for help requests.
+- Do not run `runtime-runner.js` for help requests.
+- If the user's request is mainly Chinese, reply with the Chinese help message.
+- If the user's request is mainly English, reply with the English help message.
+- Keep the response concise and close to the fixed text.
+
+Chinese help message:
+
+```text
+ChromeManager Skill 简明帮助
+
+安装：
+1. 将 chromemanager-skill-hermes 文件夹放入 Hermes 的 skills 目录或外部 skills 扫描目录。
+2. 进入 chromemanager-skill-hermes 目录，执行 npm install。
+3. 打开 config.json，填写 api_token、api_host、api_port、software_path、autoStart。
+4. software_path 示例：
+   - Windows: D:/***/***/ChromeManager.exe
+   - macOS: /Applications/***/ChromeManager.app
+5. 在 ChromeManager 中启用本地 API，并确认 Token 与 config.json 中的 api_token 一致。
+
+命令示例：
+使用 ChromeManager 准备 1-5，打开 https://example.com，点击“签到”按钮，关闭所有网页
+
+也可以拆分步骤：
+先准备 1-5
+再打开 https://example.com
+再点击“签到”按钮
+最后关闭所有网页
+```
+
+English help message:
+
+```text
+ChromeManager Skill Quick Help
+
+Installation:
+1. Put the chromemanager-skill-hermes folder into the Hermes skills directory or an external skills scan directory.
+2. Enter the chromemanager-skill-hermes directory and run npm install.
+3. Open config.json and set api_token, api_host, api_port, software_path, and autoStart.
+4. software_path examples:
+   - Windows: D:/***/***/ChromeManager.exe
+   - macOS: /Applications/***/ChromeManager.app
+5. Enable the local API in ChromeManager and make sure its token matches api_token in config.json.
+
+Command example:
+Use ChromeManager to prepare 1-5, open https://example.com, click "Check in", then close all pages
+
+You can also split it into steps:
+prepare 1-5 first
+then open https://example.com
+then click "Check in"
+finally close all pages
+```
+
 ## Runtime Actions
 
 Core actions:

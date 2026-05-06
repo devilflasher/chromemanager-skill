@@ -99,6 +99,13 @@ npm install
 
 ## 命令示例
 
+可以直接通过以下命令获取简明使用帮助：
+
+```text
+/cm 帮助
+/cm help
+```
+
 > [!IMPORTANT]
 > **首次接入前，请先完成触发词设置：**
 > - **OpenClaw**：

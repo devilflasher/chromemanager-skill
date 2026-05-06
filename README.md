@@ -99,6 +99,13 @@ npm install
 
 ## Command Examples
 
+You can ask for concise usage help directly:
+
+```text
+/cm help
+/cm 帮助
+```
+
 > [!IMPORTANT]
 > **For first-time setup, configure triggers first:**
 > - **OpenClaw**:
