@@ -41,18 +41,18 @@ Both skills provide the same core capabilities. The main differences are integra
 - Support multi-step `run-plan` workflows with automatic progress reporting
 
 Shared base actions:
-- `prepare`
-- `snapshot`
-- `click`
-- `fill`
-- `press`
-- `extract`
-- `screenshot`
-- `desktop-screenshot`
-- `report-progress`
-- `validate-stage`
-- `recover`
-- `run-plan`
+- `prepare`: open and prepare target windows
+- `snapshot`: capture page structure and refs
+- `click`: click a page element
+- `fill`: fill text into an input
+- `press`: press a keyboard key
+- `extract`: extract text from the page
+- `screenshot`: capture page screenshots
+- `desktop-screenshot`: capture the full desktop
+- `report-progress`: report status with optional screenshot
+- `validate-stage`: verify page state
+- `recover`: reload or re-navigate failed windows
+- `run-plan`: run a multi-step workflow
 
 ## Installation
 

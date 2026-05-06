@@ -41,18 +41,18 @@ Other languages: [English](./README.md)
 - 支持 `run-plan` 多步骤流程执行与自动进度回传
 
 共同支持的基础动作：
-- `prepare`
-- `snapshot`
-- `click`
-- `fill`
-- `press`
-- `extract`
-- `screenshot`
-- `desktop-screenshot`
-- `report-progress`
-- `validate-stage`
-- `recover`
-- `run-plan`
+- `prepare`：打开并准备目标窗口
+- `snapshot`：获取页面结构与 refs
+- `click`：点击页面元素
+- `fill`：向输入框填写文本
+- `press`：发送键盘按键
+- `extract`：提取页面文本
+- `screenshot`：截取网页截图
+- `desktop-screenshot`：截取整屏桌面
+- `report-progress`：回传进度与截图
+- `validate-stage`：校验页面状态
+- `recover`：恢复异常窗口
+- `run-plan`：执行多步骤流程
 
 ## 安装说明
 
